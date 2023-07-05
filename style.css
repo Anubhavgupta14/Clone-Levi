@@ -808,12 +808,7 @@ h3, .h3 {
     color: #fff;
     font-size: 15px;
 }
-@media (min-width: 576px){
-.col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
-}
-}
+
 @media (min-width: 992px){
     .col-lg-4 {
         flex: 0 0 auto;
