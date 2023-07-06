@@ -7607,7 +7607,7 @@ function myFunction() {
                 V.findOne(".dropdown-toggle", t.closest(".dropdown")).classList.add($e);
             else
                 for (const e of V.parents(t, ".nav, .list-group"))
-                    for (const t of V.prev(e, ".nav-link, .nav-item > .nav-link, .list-group-item"))
+                    for (const t of V.prev(e, ".nav-link, .navigation-con > .nav-link, .list-group-item"))
                         t.classList.add($e)
         }
         _clearActiveClass(t) {
@@ -7754,7 +7754,7 @@ function myFunction() {
             return t.matches(Ge) ? t : V.findOne(Ge, t)
         }
         _getOuterElement(t) {
-            return t.closest(".nav-item, .list-group-item") || t
+            return t.closest(".navigation-con, .list-group-item") || t
         }
         static jQueryInterface(t) {
             return this.each((function() {
@@ -13832,7 +13832,7 @@ jQuery(function($) {
             $('.navbar-light').removeClass('menu-shrink');
         }
     });
-    $('.navbar-nav .nav-item .nav-link').on('click', function(e) {
+    $('.navbar-nav .navigation-con .nav-link').on('click', function(e) {
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top - 50
@@ -14069,7 +14069,7 @@ jQuery(function($) {
             }
         }
     });
-    $('.staff-slider').owlCarousel({
+    $('.team-slide').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
