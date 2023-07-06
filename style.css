@@ -1822,6 +1822,154 @@ h3, .h3 {
     box-shadow: 0 0 14px 0 rgba(51,51,51,.6509803922);
 }
 
+/* Contact us */
+.let-contact-area-with-bg {
+    background-image: url(./img/let-contact-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.let-contact-area-with-bg::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d1820;
+    z-index: -1;
+    opacity: .77;
+}
+
+.main-section-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+.main-section-title .sub-title {
+    color: #00c195;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.let-contact-area-with-bg .main-section-title h2 {
+    color: #fff;
+}
+.let-contact-form {
+    max-width: 640px;
+    margin-left: auto;
+}
+.let-contact-area-with-bg .let-contact-form {
+    max-width: 100%;
+}
+.let-contact-form form {
+    margin-top: 25px;
+}
+.m-0 {
+    margin: 0!important;
+}
+.let-contact-area-with-bg .let-contact-form form {
+    margin-top: 0;
+}
+@media (min-width: 992px){
+.col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+}
+.let-contact-form form .form-group {
+    margin-bottom: 20px;
+}
+.let-contact-area-with-bg .let-contact-form form .form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: inline-block;
+}
+.let-contact-form form .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+group .form-control {
+    display: block;
+    height: 55px;
+    font-weight: 400;
+    background: #f8fafb;
+    border: 1px solid #e3e9ed;
+    border-radius: 10px;
+    outline: 0;
+    padding: 15px 20px;
+    color: #555;
+}
+.let-contact-area-with-bg .let-contact-form form .form-group .form-control {
+    height: 60px;
+    color: #555;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.let-contact-form form .form-group .form-control {
+    display: block;
+    height: 55px;
+    font-weight: 400;
+    background: #f8fafb;
+    border: 1px solid #e3e9ed;
+    border-radius: 10px;
+    outline: 0;
+    padding: 15px 20px;
+    color: #555;
+}
+.let-contact-area-with-bg .let-contact-form form .form-group textarea.form-control {
+    min-height: 172px;
+}
+.let-contact-area-with-bg .let-contact-form form .let-contact-btn .main-default-btn {
+    width: 100%;
+    border-radius: 5px;
+}
+.let-contact-form form .let-contact-btn .main-default-btn:hover {
+    background-color: #fff;
+    color: #00c195;
+}
+.let-contact-form form .let-contact-btn .main-default-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00c195;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .5s all ease;
+    border-radius: 10px;
+}
+
+
+
+
 /* responsive */
 @media only screen and (max-width: 767px){
 body {
@@ -1910,5 +2058,139 @@ body {
     padding: 15px 20px;
     font-size: 14px;
 }
+.pt-100 {
+    padding-top: 50px;
 }
+.get-introduced-area .container-fluid {
+    padding-right: var(--bs-gutter-x,0.75rem);
+    padding-left: var(--bs-gutter-x,0.75rem);
+    max-width: 540px;
+}
+.get-introduced-content h3 {
+    font-size: 25px;
+}
+.get-introduced-content .introduced-counter-item {
+    margin-top: 10px;
+}
+.get-introduced-content .introduced-counter-item .counter-card h3 {
+    font-size: 35px;
+    color: #fff;
+}
+.get-introduced-content .introduced-counter-item .counter-card p {
+    padding-left: 55px;
+}
+.get-introduced-area::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.get-introduced-area::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.get-introduced-image {
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-top: 30px;
+}
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.video-overview-image::before {
+    margin: 15px;
+}
+.video-overview-content {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.video-overview-content .overview-inner-box {
+    padding-left: 65px;
+}
+.video-overview-content .overview-inner-box .icon i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+}
+.video-overview-content .overview-inner-box h3 {
+    font-size: 18px;
+}
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-section-title {
+    margin-bottom: 35px;
+}
+.main-section-title h2 {
+    font-size: 28px;
+}
+.core-service-list-tab .nav .nav-item {
+    width: 100%;
+    margin-right: 0;
+}
+.core-service-list-tab .tab-content .tab-pane {
+    padding: 25px 20px;
+}
+.core-service-list-tab .core-service-content .icon i {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 28px;
+}
+.core-service-list-tab .core-service-content h3 {
+    font-size: 22px;
+}
+.core-service-list-tab .core-service-content .list li {
+    font-size: 14.5px;
+}
+.core-service-list-tab .core-service-image {
+    margin-top: 25px;
+}
+.main-section-title {
+    margin-bottom: 35px;
+}
+.main-section-title h2 {
+    font-size: 28px;
+}
+.staff-card .staff-content h3 {
+    font-size: 20px;
+}
+.single-footer-widget.ps-3 {
+    padding-left: 0!important;
+}
+.single-footer-widget h3 {
+    font-size: 18px;
+}
+.single-footer-widget .quick-link li {
+    font-size: 14px;
+}
+.footer-style-area .copyright-style-area {
+    margin-top: 25px;
+}
+.footer-style-area .copyright-style-area .copyright-item {
+    text-align: center;
+}
+.footer-style-area .copyright-style-area .copyright-item .payment-list {
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-style-area .copyright-style-area .copyright-item .payment-list li a img {
+    max-width: 30px;
+}
+}
+
 /* responsive */
